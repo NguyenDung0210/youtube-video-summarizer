@@ -1,0 +1,4 @@
+groq
+streamlit
+phidata>=2.5.0
+youtube_transcript_api

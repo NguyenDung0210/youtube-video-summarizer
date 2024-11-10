@@ -11,8 +11,6 @@ This Streamlit-based application automatically generates structured summaries of
 - Adjustable Chunk Length: Control the length of each chunk from the video captions for the model to process and summarize individually before creating a cohesive final summary.
 - Simple URL Input: Paste the video URL into the text box and click the button to generate your summary instantly.
 
-> Note: For best results, please use videos in English. Other languages are currently not supported and may yield incomplete or inaccurate summaries.
-
 ## Instruction For Use
 
 ### 1. Export your Groq API Key
@@ -34,3 +32,5 @@ streamlit run app.py
 ```
 
 - Open [localhost:8501](http://localhost:8501) to view your Video Summary App
+
+> Note: For best results, please use videos in English. Other languages are currently not supported and may yield incomplete or inaccurate summaries.

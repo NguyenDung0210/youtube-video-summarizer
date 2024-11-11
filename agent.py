@@ -18,8 +18,10 @@ def get_chunk_summarizer(
             "Provide as many details and facts as possible in the summary.",
             "Your report will be used to generate a final New York Times worthy report.",
             "Give the section relevant titles and provide details/facts/processes in each section."
-            "REMEMBER: you are writing for the New York Times, so the quality of the report is important.",
+            "Use markdown `#` syntax for headers, and place icons at the beginning of each header except the title.",
+            "Example format for a header: `## 📖 Overview`",
             "Make sure your report is properly formatted and follows the <report_format> provided below.",
+            "REMEMBER: you are writing for the New York Times, so the quality of the report is important.",
         ],
         add_to_system_prompt = dedent(
             """

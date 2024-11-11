@@ -4,7 +4,7 @@
 
 This Streamlit-based application automatically generates structured summaries of YouTube videos, offering a fast and efficient way to grasp key points without watching the entire video. The tool leverages LLMs via the Groq API and applies advanced prompt engineering techniques to produce clear, well-organized summaries.
 
-## Key Feature
+## Key Features
 - **Prompt-Driven Structure**: Uses prompt engineering to create summaries with distinct sections like Overview, Details, and Key Takeaways ensuring clarity and coherence.
 - **Real-Time Video Parsing**: Retrieves and displays video metadata and captions as the content is processed.
 - **Flexible Model Selection**: Choose from a list of available models

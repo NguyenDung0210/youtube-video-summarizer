@@ -1,4 +1,4 @@
-# Video Summarization Tool
+# Video Summary Tool
 
 ## Introduction
 

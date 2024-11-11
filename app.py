@@ -37,8 +37,11 @@ def main():
         max_value = 10000,
         value = 2000,
         step = 500,
-        help = "Set the number of characters to chunk the text into.",
+        help = "Set the word limit for each chunk, allowing the model to summarize sections separately before combining.",
     )
+    
+    # Set length of the summary
+    summary_type = st.radio(":gear: Select Type", ["Long", "Short"])
 
     # Get video url and generate report
     video_url = st.text_input(":video_camera: Video URL")
@@ -51,7 +54,7 @@ def main():
     if "youtube_url" in st.session_state:
         _url = st.session_state["youtube_url"]
         youtube_tools = YouTubeTools(languages=["en"])
-        video_summarizer = get_video_summarizer(model=llm_model)
+        video_summarizer = get_video_summarizer(model=llm_model, summary_type=summary_type)
         
         ### Show video information
         with st.status("Parsing Video", expanded=False) as status:                     
